@@ -22,6 +22,18 @@ app.get("/", (req, res) => {
   res.send("API is running successfully");
 });
 
+
+app.get('/api/keep-alive', async (req, res) => {
+    try {
+        await User.findOne().select('_id').lean(); 
+        
+        res.status(200).json({ status: 'awake', message: 'Server and DB are active' });
+    } catch (error) {
+        console.error('Keep-alive ping failed:', error);
+        res.status(500).json({ error: 'Database ping failed' });
+    }
+});
+
 app.use((req, res, next) => {
   const error = new Error(`Not Found - ${req.originalUrl}`);
   res.status(404);
