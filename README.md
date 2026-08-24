@@ -13,49 +13,49 @@
 
 <br />
 
-> **Veloc** is a MERN-stack chat application designed to replicate advanced AI conversational interfaces[cite: 2]. It leverages the Groq API for lightning-fast Large Language Model (LLM) inference, wrapped in a responsive React frontend[cite: 2].
+> **Veloc** is a MERN-stack chat application designed to replicate advanced AI conversational interfaces. It leverages the Groq API for lightning-fast Large Language Model (LLM) inference, wrapped in a responsive React frontend.
 
 ## ✨ Core Features
-* **AI Chat Integration:** Connects directly to LLMs via a dedicated `groqAPI.js` utility for high-speed AI responses[cite: 2].
-* **Secure Authentication:** User signup and login handled securely with custom `authController.js` and `fetchUser.js` middleware[cite: 2].
-* **Chat History Management:** Persists user conversations using MongoDB `Thread` and `User` models[cite: 2].
-* **Dynamic UI:** A Vite-powered React frontend featuring a `Sidebar`, `Search` functionality, and a dedicated `Chat` interface[cite: 2].
-* **Error Handling:** Centralized API error management via a custom `errorHandler.js` middleware[cite: 2].
+* **AI Chat Integration:** Connects directly to LLMs via a dedicated `groqAPI.js` utility for high-speed AI responses.
+* **Secure Authentication:** User signup and login handled securely with custom `authController.js` and `fetchUser.js` middleware.
+* **Chat History Management:** Persists user conversations using MongoDB `Thread` and `User` models.
+* **Dynamic UI:** A Vite-powered React frontend featuring a `Sidebar`, `Search` functionality, and a dedicated `Chat` interface.
+* **Error Handling:** Centralized API error management via a custom `errorHandler.js` middleware.
 
 ## 🛠️ Tech Stack & Architecture
 
 | Tier | Technologies Used |
 | :--- | :--- |
-| **Frontend** | React.js, Vite, Context API (`MyContext.jsx`)[cite: 2] |
-| **Backend** | Node.js, Express.js[cite: 2] |
-| **Database** | MongoDB (Mongoose schemas)[cite: 2] |
+| **Frontend** | React.js, Vite, Context API (`MyContext.jsx`) |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB (Mongoose schemas) |
 | **AI Integration**| Groq API[cite: 2] |
-| **Testing**| API test suites (`api.test.js`)[cite: 2] |
+| **Testing**| API test suites (`api.test.js`)|
 
 ## 📂 Repository Structure
 ```text
 Veloc/
 ├── backend/
-│   ├── controller/           # Logic for auth (authController.js) and chat (chatController.js)[cite: 2]
-│   ├── middleware/           # errorHandler.js and fetchUser.js for request validation[cite: 2]
-│   ├── model/                # Mongoose schemas (Thread.js, User.js)[cite: 2]
-│   ├── route/                # Express API endpoints (authRoutes.js, chat.js)[cite: 2]
+│   ├── controller/           # Logic for auth (authController.js) and chat (chatController.js)
+│   ├── middleware/           # errorHandler.js and fetchUser.js for request validation
+│   ├── model/                # Mongoose schemas (Thread.js, User.js)
+│   ├── route/                # Express API endpoints (authRoutes.js, chat.js
 │   ├── test/                 # Backend testing (api.test.js)[cite: 2]
-│   ├── utils/                # Helper functions including groqAPI.js and asyncHandler.js[cite: 2]
-│   └── server.js             # Express application entry point[cite: 2]
+│   ├── utils/                # Helper functions including groqAPI.js and asyncHandler.js
+│   └── server.js             # Express application entry point
 └── frontend/
-    ├── public/               # Static assets including vite.svg[cite: 2]
+    ├── public/               # Static assets including vite.svg
     ├── src/
-    │   ├── assets/           # UI graphics including chatgpt.webp and react.svg[cite: 2]
-    │   ├── App.jsx           # Main application routing[cite: 2]
-    │   ├── AuthModel.jsx     # Authentication UI component[cite: 2]
-    │   ├── Chat.jsx & .css   # Primary chat interface and styling[cite: 2]
-    │   ├── MainLayout.jsx    # Core UI wrapper[cite: 2]
-    │   ├── MyContext.jsx     # Global state management[cite: 2]
-    │   ├── Search.jsx        # Search functionality component[cite: 2]
-    │   ├── Sidebar.jsx & .css# Navigation and history sidebar[cite: 2]
-    │   └── config.js         # Frontend configuration[cite: 2]
-    └── vite.config.js        # Vite bundler configuration[cite: 2]
+    │   ├── assets/           # UI graphics including chatgpt.webp and react.svg
+    │   ├── App.jsx           # Main application routing
+    │   ├── AuthModel.jsx     # Authentication UI component
+    │   ├── Chat.jsx & .css   # Primary chat interface and styling
+    │   ├── MainLayout.jsx    # Core UI wrapper
+    │   ├── MyContext.jsx     # Global state management
+    │   ├── Search.jsx        # Search functionality component
+    │   ├── Sidebar.jsx & .css# Navigation and history sidebar
+    │   └── config.js         # Frontend configuration
+    └── vite.config.js        # Vite bundler configuration
 ```
 
 ## ⚙️ Local Development Setup
